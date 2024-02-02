@@ -6,7 +6,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/registration", (req, res) => {
-  res.status(200).send("Welcome to My Coding challenge");
+  res.status(200).send("Welcome to Coding challenge");
 });
 
 const PORT = 5000;
