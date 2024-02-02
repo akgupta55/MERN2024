@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
+const authcontorllers = require("../controller/auth-controller");
 
-router.route("/").get((req, res) => {
-  res.status(200).send("Welcome to day 1st of coding 15 days challenges");
-});
+router.route("/").get(authcontorllers.home);
+router.route("/register").get(authcontorllers.register);
 
 module.exports = router;
