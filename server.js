@@ -1,13 +1,9 @@
 const express = require("express");
 const app = express();
+const router = require("./router/auth-route");
 
-app.get("/", (req, res) => {
-  res.status(200).send("Welcome to day 1st of coding 15 days challenges");
-});
-
-app.get("/registration", (req, res) => {
-  res.status(200).send("Welcome to Coding challenge");
-});
+// mounting route
+app.use("/api/auth", router);
 
 const PORT = 5000;
 
