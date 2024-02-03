@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 const router = require("./router/auth-route");
 
+app.use(express.json());
+
 // mounting route
 app.use("/api/auth", router);
 
